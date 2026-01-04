@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>توانا نتورک | زیرساخت اینترنت مستقل</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary: #0ea5e9;
+        --bg-dark: #020617;
+      }
+      body {
+        font-family: 'Vazirmatn', sans-serif;
+        background-color: var(--bg-dark);
+        color: #f8fafc;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      .container {
+        max-width: 1200px !important;
+        margin: 0 auto;
+      }
+
+      .glass-card {
+        background: rgba(15, 23, 42, 0.4);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .input-standard {
+        background: rgba(2, 6, 23, 0.8);
+        border: 1px solid rgba(30, 41, 59, 1);
+        transition: all 0.2s ease;
+      }
+      .input-standard:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.1);
+      }
+
+      /* Fix for oversized sections */
+      section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+      
+      @media (max-width: 768px) {
+        section {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+        }
+        h1 { font-size: 2.25rem !important; }
+      }
+
+      .form-step-active { animation: fadeIn 0.4s ease-out forwards; }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
